@@ -1,1 +1,0 @@
-# min-guk.github.io

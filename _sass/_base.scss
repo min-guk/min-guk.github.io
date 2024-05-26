@@ -369,10 +369,11 @@ ul.task-list input[type="checkbox"] {
 // Social (bottom)
 
 .social {
-  text-align: center;
+  text-align: right;
+  padding-right: 2rem;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.5rem;
 
     a {
       i::before {

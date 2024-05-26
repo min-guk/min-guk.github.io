@@ -28,8 +28,8 @@
       "name": "Systems for ML",
       "icon": "fa-solid fa-cogs",
       "keywords": [
-        "CXL-Flash for LLM",
-        "Scheduler for ML Cluster"
+        "Scheduler for ML Cluster",
+        "CXL-Flash for LLM"
       ]
     }
   ],

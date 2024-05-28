@@ -10,8 +10,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>+82-31-8005-3247</p>
-    <p>mgchoi@dankook.ac.kr</p>
+    <p>mgchoi@dankook.ac.kr<br>
     <p>System Software Laboratory, Dankook University, Korea</p>
     
 
@@ -21,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 ---
 I'm a Master's student at Dankook University in South Korea, where I am fortunate to be advised by Professors [Seehwan Yoo](https://sites.google.com/site/dkumobileos/members/seehwanyoo) and [Jongmoo Choi](http://embedded.dankook.ac.kr/~choijm/) in the [System Software Laboratory](https://sslab.dankook.ac.kr/).
 
-My research focuses on the exciting convergence of System and AI, with specific emphasis on **Learned Index** and **System for ML**. 
+My research focuses on the exciting convergence of System and AI, with specific emphasis on **Learned Index** and **System for ML**. Here is my [CV](https://min-guk.github.io/cv/).
 
 On-going projects:
   - Adaptive Sample EB-PLA Algorithm for Learned Index

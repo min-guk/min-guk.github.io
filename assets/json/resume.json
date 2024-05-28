@@ -4,7 +4,7 @@
     "label": "Computer Science Scientist",
     "image": "",
     "email": "mgchoi@dankook.ac.kr",
-    "url": "min-guk.github.io",
+    "url": "",
     "summary": "",
     "location": {
       "address": "152 Jukjeon-ro",
@@ -20,16 +20,14 @@
       "name": "ML for System ",
       "icon": "fa-solid fa-brain",
       "keywords": [
-        "Learned Index",
-        "Learned Scheduler"
+        "Learned Index"
       ]
     },
     {
       "name": "Systems for ML",
       "icon": "fa-solid fa-cogs",
       "keywords": [
-        "Scheduler for ML Cluster",
-        "CXL-Flash for ML"
+        "Scheduler for ML Cluster"
       ]
     }
   ],

@@ -13,7 +13,22 @@
   year={2024},
   publisher={ACM New York, NY, USA},
   selected={true},
-  url={https://2024.sigmod.org/program_sigmod.shtml#ssession33}
+  venue = {international conference},
+  html={https://2024.sigmod.org/program_sigmod.shtml#ssession33},
+  abstract={By embedding the distribution of keys in indexing structure, learned indexes can minimize the index size
+and maximize the lookup performance. Yet, one of the problems in the present learned index is the long
+index-building time. The conventional learned index requires a complete traversal of the entire dataset, which
+makes it less practical than traditional index. This paper challenges the efficiency of build time to make the
+learned index practical.
+Our approach for a build time-efficient learned index is to employ sampled learning. In this paper, we
+present two error-bounded sampling schemes: Sample EB-PLA, and Sample EB-Histogram. Although sampling
+is a simple idea, there are several considerations to make it practical. For example, sampling interval, errorboundness, and index hyper-parameters are inter-related each other, presenting complicated trade-offs between
+build-time, index size, accuracy and lookup latency.
+Throughout the extensive experiments over six real-world datasets, we show that the index-building time
+can be efficiently reduced over an order of magnitude by our sampling schemes. The results reveal that the
+sampling expands the design space of learned indexes, including the build-time as well as lookup performance
+and index size. Our Pareto analysis shows that a learned index can be built more efficiently than a traditional
+index through sampling.}
 }
 
 @article{ramadhan2023empirical,
@@ -27,7 +42,9 @@
   year={2023},
   publisher={MDPI},
   selected={true},
-  url={https://www.mdpi.com/2079-9292/12/4/1018}
+  venue = {international journal},
+  html={https://www.mdpi.com/2079-9292/12/4/1018},
+  abstract={The purpose of this paper is proposing a novel search mechanism, called SLR (Segmented Linear Regression) search, based on the concept of learned index. It is motivated by our observation that a lot of big data, collected and used by previous studies, have a linearity property, meaning that keys and their stored locations show a strong linear correlation. This observation leads us to design SLR search where we apply segmentation into the well-known machine learning algorithm, linear regression, for identifying a location from a given key. We devise two segmentation techniques, equal-size and error-aware, with the consideration of both prediction accuracy and segmentation overhead. We implement our proposal in LevelDB, Google’s key-value store, and verify that it can improve search performance by up to 12.7%. In addition, we find that the equal-size technique provides efficiency in training while the error-aware one is tolerable to noisy data.}
 }
 
 @article{Hansu2022hitratio,
@@ -37,7 +54,13 @@
   journal={Korea Software Congress},
   pages={1836--1838},
   year={2022},
-  url={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224614}
+  venue = {domestic conference},
+  html={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224614},
+  abstract={구글에서 개발한 LSM-tree 기반의 키-밸류 데이터베이스 LevelDB는 읽기 연산의 성능 증가를 위해
+블룸 필터 기능을 제공하고 있다. 하지만 블룸 필터엔 false-positive로 인한 성능 저하 현상이 존재하며,
+이러한 false-Positive는 hit-ratio가 낮은 데이터베이스에서 더 많이 발생한다. 그렇기에, 본 논문에서는
+LevelDB의 ReadRandom 연산 성능을 측정함으로써 데이터베이스의 hit-ratio에 따른 최적의 bits-perkey 값을 확인하였다.
+}
 }
 
 @article{Subin2022leveldb,
@@ -47,17 +70,33 @@
   journal={Korea Software Congress},
   pages={1839--1841},
   year={2022},
-  url={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224615}
+  venue = {domestic conference},
+  html={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224615},
+  abstract={Key-value 쌍으로 데이터를 저장하는 LevelDB는 LSM-tree 구조를 기반으로 데이터를 효율적으로 저장
+한다. 하지만 계층적 구조로 인해 읽기 작업의 성능이 저하된다. 이에 LevelDB는 빠른 읽기 작업의 성능을
+위해 SSTable을 캐싱하는 인덱스 캐시와 데이터를 캐싱하는 블록 캐시를 사용한다. 본 논문에서는 SSTable
+의 구조와 SSTable의 key-value 데이터를 읽는 작업에서 캐시 사용을 분석하였다. 또한 인덱스 캐시의 개
+수와 블록 캐시의 크기를 조절하여 성능 변화를 관찰하였다. 실험 결과 데이터 로드 크기에 따라서 인덱스
+캐시 개수에 대한 읽기 성능 향상이 관찰되었고, 블록 캐시의 크기가 증가함에 따라 읽기 성능 향상이 관찰
+되었다.
+}
 }
 
 @article{Sangwoo2022compaction,
   abbr={KSC},
   title={Read performance analysis according to Compaction Trigger},
-  author={Sangwoo Kang, and Minguk Choi, and Seehwan Yoo, and Jongmoo Choi},
+  author={Sangwoo Kang and Guangxun Zhao and Minguk Choi, and Seehwan Yoo, and Jongmoo Choi},
   journal={Korea Software Congress},
   pages={1851--1853},
   year={2022},
-  url={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224619}
+  venue = {domestic conference},
+  html={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224619},
+  abstract={오늘날 데이터의 종류가 다양해지고 데이터 양 또한 증가하고 있다. 이와 관련 Google사에서는 LSM-Tree
+기반 NoSQL 데이터 베이스 LevelDB를 개발했다. LevelDB는 데이터 파일들을 효과적으로 관리하기 위해 컴
+팩션(Compaction)작업을 수행하여 중복된 데이터를 제거하고 새롭게 정렬된 데이터 파일을 생성하며 이때
+성능에 큰 영향을 준다. 따라서 본 Compaction을 실행하는 방법에 따라 성능에 영향을 줄 것이라 판단하여
+Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 여부에 따라 Read 성능 변화를 관찰했다.
+}
 }
 
 @article{Suhwan2022rocksdb,
@@ -67,5 +106,55 @@
   journal={Korea Software Congress},
   pages={1848--1850},
   year={2022},
-  url={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224618}
+  venue = {domestic conference},
+  html={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224618},
+  abstract={키-밸류 데이터베이스는 WAL(Write-Ahead-Log) 방식으로 데이터의 일관성을 제공한다. 그러나 데이터
+를 WAL에 쓰는 과정 또는 WAL에서 복구하는 과정에서 데이터의 손상이 발생할 수 있고 RocksDB에서
+는 이를 체크섬으로 확인한다. 본 논문에서는 메모리 내 체크섬을 제공하는 per key-value checksum이
+적용되었을 때 WAL의 쓰기 및 복구 과정과 실험을 통해 성능에 미치는 영향에 대해 분석한다.}
+}
+
+@article{Suhwan2024,
+  abbr={KCC},
+  title={Breakdown Internal Operations in Updatable Learned Index},
+  author={Suhwan Shin and Minguk Choi and Nakyeong Kim and Seehwan Yoo, and Jongmoo Choi},
+  journal={Korea Computer Congress (Accepted)},
+  year={2024},
+  venue = {domestic conference}
+}
+
+@article{Nakyeong2024,
+  abbr={KCC},
+  title={Analysis of Updatable Learned Indexes with Index Size Perspective},
+  author={Nakyeong Kim and Minguk Choi and Suhwan Shin and Seehwan Yoo, and Jongmoo Choi},
+  journal={Korea Computer Congress (Accepted)},
+  year={2024},
+  venue = {domestic conference}
+}
+
+@article{Boseung2024,
+  abbr={KCC},
+  title={Accelerating RMI Training with SIMD},
+  author={Boseung Kim and Minguk Choi and Yeojin Oh and YONGJIE ZHU and Seehwan Yoo, and Jongmoo Choi},
+  journal={Korea Computer Congress (Accepted)},
+  year={2024},
+  venue = {domestic conference}
+}
+
+@article{Yeojin2024,
+  abbr={KCC},
+  title={Analysis of RMI Using CPU-Optimized Search Algorithms},
+  author={Yeojin Oh and Minguk Choi and Boseung Kim and YONGJIE ZHU and Seehwan Yoo, and Jongmoo Choi},
+  journal={Korea Computer Congress (Accepted)},
+  year={2024},
+  venue = {domestic conference}
+}
+
+@article{YONGJIE2024,
+  abbr={KCC},
+  title={Performance Analysis of Batch Prediction Using SIMD in RMI},
+  author={Yongjie Zhu and Minguk Choi and Yeojin Oh and Boseung Kim and Seehwan Yoo, and Jongmoo Choi},
+  journal={Korea Computer Congress (Accepted)},
+  year={2024},
+  venue = {domestic conference}
 }

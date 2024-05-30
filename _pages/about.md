@@ -20,10 +20,10 @@ social: true # includes social icons at the bottom of the page
 ---
 I'm a Master's student at Dankook University in South Korea, where I am fortunate to be advised by Professors [Seehwan Yoo](https://sites.google.com/site/dkumobileos/members/seehwanyoo) and [Jongmoo Choi](http://embedded.dankook.ac.kr/~choijm/) in the [System Software Laboratory](https://sslab.dankook.ac.kr/).
 
-My research focuses on the exciting convergence of System and AI, with specific emphasis on **Learned Index** and **System for ML**. Here is my [CV](https://min-guk.github.io/cv/).
+My research focuses on the exciting convergence of System and AI, with specific emphasis on **ML for Systems** and **Systems for ML**. Here is my [CV](https://min-guk.github.io/cv/).
 
 On-going projects:
-  - Adaptive Sample EB-PLA Algorithm for Learned Index
+  - Adaptive Sample Training Algorithm for Learned Index
   - Accelerating Learned Index via SIMD
   - Semi-ordered Parallel Learned Index
 

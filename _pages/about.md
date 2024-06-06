@@ -24,7 +24,7 @@ My research focuses on **ML for Systems** and **Systems for ML**, with specific 
 
 On-going projects:
   - **Semi-ordered Parallel Learned Index**: Enhances performance in multi-threaded environments by reducing the critical section and data sorting overhead while maintaining lookup performance and size
-  - **Adaptive Sample Training Algorithm for Learned Index**: An algorithm for dynamically training with the sub-optimal sampling interval by considering the data distribution and error-bound.
+  - **Adaptive Sample Training Algorithm for Learned Index**: An algorithm for dynamically training with the optimal sampling interval by considering the data distribution and error-bound.
   - **Accelerating Learned Index via SIMD**: Accelerating the unique training and operations (e.g., model-biased insert) of learned index through the parallelism of internal ML models, which has not yet been actively studied.
 
 ##### **<span style="color: #D80000;">I am currently looking for a PhD position for 2025!</span>**   

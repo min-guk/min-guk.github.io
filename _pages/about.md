@@ -27,4 +27,4 @@ On-going projects:
   - Accelerating Learned Index via SIMD
   - Semi-ordered Parallel Learned Index
 
-##### **I am currently looking for a PhD position for 2025!**   
+##### **<span style="color: #D80000;">I am currently looking for a PhD position for 2025!</span>**   

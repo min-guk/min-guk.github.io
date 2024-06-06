@@ -61,8 +61,7 @@ index through sampling.},
   html={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224614},
   abstract={구글에서 개발한 LSM-tree 기반의 키-밸류 데이터베이스 LevelDB는 읽기 연산의 성능 증가를 위해블룸 필터 기능을 제공하고 있다. 하지만 블룸 필터엔 false-positive로 인한 성능 저하 현상이 존재하며,
 이러한 false-Positive는 hit-ratio가 낮은 데이터베이스에서 더 많이 발생한다. 그렇기에, 본 논문에서는
-LevelDB의 ReadRandom 연산 성능을 측정함으로써 데이터베이스의 hit-ratio에 따른 최적의 bits-perkey 값을 확인하였다.
-(The key-value database LevelDB, developed by Google based on the LSM-tree structure, offers a bloom filter feature to enhance read operation performance. However, this bloom filter can lead to performance degradation due to false positives, which occur more frequently in databases with low hit ratios. Therefore, in this paper, we measured the ReadRandom operation performance of LevelDB to determine the optimal bits-per-key value depending on the database's hit ratio.)}
+LevelDB의 ReadRandom 연산 성능을 측정함으로써 데이터베이스의 hit-ratio에 따른 최적의 bits-perkey 값을 확인하였다. (The key-value database LevelDB, developed by Google based on the LSM-tree structure, offers a bloom filter feature to enhance read operation performance. However, this bloom filter can lead to performance degradation due to false positives, which occur more frequently in databases with low hit ratios. Therefore, in this paper, we measured the ReadRandom operation performance of LevelDB to determine the optimal bits-per-key value depending on the database's hit ratio.)}
 }
 
 @article{Subin2022leveldb,
@@ -80,8 +79,7 @@ LevelDB의 ReadRandom 연산 성능을 측정함으로써 데이터베이스의 
 의 구조와 SSTable의 key-value 데이터를 읽는 작업에서 캐시 사용을 분석하였다. 또한 인덱스 캐시의 개
 수와 블록 캐시의 크기를 조절하여 성능 변화를 관찰하였다. 실험 결과 데이터 로드 크기에 따라서 인덱스
 캐시 개수에 대한 읽기 성능 향상이 관찰되었고, 블록 캐시의 크기가 증가함에 따라 읽기 성능 향상이 관찰
-되었다.
-(LevelDB, which stores data in key-value pairs, efficiently manages data based on the LSM-tree structure. However, its hierarchical structure leads to reduced read operation performance. To address this, LevelDB utilizes an index cache that caches SSTables and a block cache that caches data to enhance the speed of read operations. This paper analyzes the use of caches in reading key-value data from SSTables and examines the structural aspects of SSTables. Additionally, we adjusted the number of index caches and the size of the block cache to observe performance changes. Experimental results showed that read performance improvement was observed with an increase in the number of index caches depending on the data load size, and read performance enhancement was noted as the size of the block cache increased.)
+되었다. (LevelDB, which stores data in key-value pairs, efficiently manages data based on the LSM-tree structure. However, its hierarchical structure leads to reduced read operation performance. To address this, LevelDB utilizes an index cache that caches SSTables and a block cache that caches data to enhance the speed of read operations. This paper analyzes the use of caches in reading key-value data from SSTables and examines the structural aspects of SSTables. Additionally, we adjusted the number of index caches and the size of the block cache to observe performance changes. Experimental results showed that read performance improvement was observed with an increase in the number of index caches depending on the data load size, and read performance enhancement was noted as the size of the block cache increased.)
 }
 }
 
@@ -98,8 +96,7 @@ LevelDB의 ReadRandom 연산 성능을 측정함으로써 데이터베이스의 
 기반 NoSQL 데이터 베이스 LevelDB를 개발했다. LevelDB는 데이터 파일들을 효과적으로 관리하기 위해 컴
 팩션(Compaction)작업을 수행하여 중복된 데이터를 제거하고 새롭게 정렬된 데이터 파일을 생성하며 이때
 성능에 큰 영향을 준다. 따라서 본 Compaction을 실행하는 방법에 따라 성능에 영향을 줄 것이라 판단하여
-Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 여부에 따라 Read 성능 변화를 관찰했다.
-(As the variety and volume of data continue to grow today, Google has developed the LSM-Tree based NoSQL database, LevelDB. LevelDB performs compaction processes to effectively manage data files, removing duplicate data and creating newly organized data files, which significantly impacts performance. Therefore, considering that the method of executing this compaction could affect performance, this study explores two different structures for performing compaction and observes changes in read performance based on whether or not compaction is executed.)
+Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 여부에 따라 Read 성능 변화를 관찰했다. (As the variety and volume of data continue to grow today, Google has developed the LSM-Tree based NoSQL database, LevelDB. LevelDB performs compaction processes to effectively manage data files, removing duplicate data and creating newly organized data files, which significantly impacts performance. Therefore, considering that the method of executing this compaction could affect performance, this study explores two different structures for performing compaction and observes changes in read performance based on whether or not compaction is executed.)
 }
 }
 
@@ -115,8 +112,7 @@ Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 �
   abstract={키-밸류 데이터베이스는 WAL(Write-Ahead-Log) 방식으로 데이터의 일관성을 제공한다. 그러나 데이터
 를 WAL에 쓰는 과정 또는 WAL에서 복구하는 과정에서 데이터의 손상이 발생할 수 있고 RocksDB에서
 는 이를 체크섬으로 확인한다. 본 논문에서는 메모리 내 체크섬을 제공하는 per key-value checksum이
-적용되었을 때 WAL의 쓰기 및 복구 과정과 실험을 통해 성능에 미치는 영향에 대해 분석한다.
-  (Key-value databases provide data consistency using the Write-Ahead-Log (WAL) method. However, data corruption can occur during the process of writing to the WAL or recovering from it, and RocksDB uses checksums to verify this. This paper analyzes the impact on performance of applying per key-value checksums in the writing and recovery processes of the WAL, as tested through experiments.)}
+적용되었을 때 WAL의 쓰기 및 복구 과정과 실험을 통해 성능에 미치는 영향에 대해 분석한다. (Key-value databases provide data consistency using the Write-Ahead-Log (WAL) method. However, data corruption can occur during the process of writing to the WAL or recovering from it, and RocksDB uses checksums to verify this. This paper analyzes the impact on performance of applying per key-value checksums in the writing and recovery processes of the WAL, as tested through experiments.)}
 }
 
 @article{Suhwan2024,
@@ -125,7 +121,11 @@ Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 �
   author={Suhwan Shin and Minguk Choi and Nakyeong Kim and Seehwan Yoo, and Jongmoo Choi},
   journal={Korea Computer Congress (Accepted)},
   year={2024},
-  venue = {domestic conference}
+  venue = {domestic conference},
+  abstract={본 논문에서는 updatable learned index의 공정한 비교를 위해 메모리 사용 정책이 다른 두 
+인덱스 ALEX와 LIPP를 분석하여 인덱스 크기를 비슷하게 사용할 때의 성능을 비교한다. 또한, 
+키 삽입 시에 발생하는 과정을 탐색과 삽입으로 구분하여 내부 작업을 분석함으로써 워크로드에 
+따른 성능 병목 원인을 분석한다. (In this paper, we conduct a fair comparison of updatable learned indexes by analyzing two indexes with different memory usage policies, ALEX and LIPP, and compare their performance when the index sizes are similar. Additionally, we differentiate the processes that occur during key insertion into search and insertion operations, and analyze the internal tasks to identify the performance bottlenecks according to the workload.)}
 }
 
 @article{Nakyeong2024,
@@ -134,7 +134,21 @@ Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 �
   author={Nakyeong Kim and Minguk Choi and Suhwan Shin and Seehwan Yoo, and Jongmoo Choi},
   journal={Korea Computer Congress (Accepted)},
   year={2024},
-  venue = {domestic conference}
+  venue = {domestic conference},
+  abstract = {인덱스는 데이터베이스 시스템의 핵심 요소로최근에는 탐색 키의 위치 예측에 머신러닝 , 
+모델을 활용하는 가 주목받고 있다초기의 는 탐색 성능이 Learned Index . Learned Index
+뛰어나고 인덱스 크기가 작은 장점이 있지만수정 연산을 지원하지 않는 한계가 있었다, . 
+는 추가 공간을 할당하여 수정 연상을 지원하지만삽입 성능을 위해 Updatable Learned Index , 
+배열의 크기를 여유롭게 설정하면서 인덱스의 크기가 증가한다인덱스 크기는 저장 용량과 . 
+비용 측면에서 중요한 요소이지만이전 연구들은 다른 성능 지표에 비해 이를 상대적으로 , 
+간과하는 경향이 있다본 논문에서는 두 가지 대표적인 인 와 . Updatable Learned Index ALEX
+를 대상으로 인덱스 크기에 영향을 미치는 내부 인자를 분석하고크기를 고려하여 LIPP , 
+처리량을 비교한다인덱스 크기가 동일할 때워크로드에서는 가및 . , Read-Only ALEX , Mixed 
+워크로드에서는 가 더 높은 처리량을 보인다이는 기존 연구에서 크기를 Write-Only LIPP . 
+고려하지 않고 성능을 비교할 때가 모든 워크로드에서 보다 더 높은 처리량을 , LIPP ALEX 
+보인 것과 대조적이다또한인덱스 크기가 탐색 성능에는 큰 영향을 미치지만 삽입 성능에는 . , 
+덜 미치므로 다른 병목 지점이 존재함을 지적하며의 개선 방향을 , Updatable Learned Index
+제시한다. (Indexes are a key component of database systems, and recently, there has been growing interest in utilizing machine learning models to predict the position of search keys. Early models, such as the Learned Index, offered excellent search performance and small index sizes but had limitations in supporting update operations. The Updatable Learned Index, which allocates additional space to support update operations, increases the size of the index by setting the array size generously for insertion performance. Index size is a crucial factor in terms of storage capacity and cost, but previous studies have tended to overlook this aspect compared to other performance metrics. In this paper, we analyze internal factors affecting the index size of two representative indexes, Updatable Learned Index and ALEX, and compare throughput considering size. When the index size is the same, ALEX shows higher throughput in read-only workloads, while LIPP shows higher throughput in mixed workloads. This contrasts with previous studies where LIPP demonstrated higher throughput than ALEX in all workloads without considering size. Additionally, we point out that index size significantly impacts search performance but less so on insertion performance, indicating the presence of other bottlenecks. We suggest directions for improving the Updatable Learned Index.)}
 }
 
 @article{Boseung2024,
@@ -143,7 +157,14 @@ Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 �
   author={Boseung Kim and Minguk Choi and Yeojin Oh and YONGJIE ZHU and Seehwan Yoo, and Jongmoo Choi},
   journal={Korea Computer Congress (Accepted)},
   year={2024},
-  venue = {domestic conference}
+  venue = {domestic conference},
+  abstract={Learned index는 머신 러닝 모델을 활용해 키와 키의 위치를 학습하여 요청받은 키의 위치를 빠르게 탐색하는 
+인덱스 구조이다. Learned index는 전통적인 인덱스보다 메모리 사용량이 적고 탐색 성능이 뛰어나 주목받고 있
+다. 하지만 learned index는 인덱스를 빌드하는 과정에서 내부 머신 러닝 모델을 학습시켜야 하고, 그 학습 시간
+으로 인해 전통적인 인덱스보다 빌드 시간이 훨씬 길다는 단점이 존재한다. 본 논문에서는 learned index의 빌드 
+시간 한계를 극복하기 위해 내부 머신 러닝 학습 알고리즘에 SIMD를 적용해 학습 시간을 가속하는 기법을 제안
+한다. 그 결과, 대표적인 learned index 구조인 RMI는 SIMD를 활용한 병렬 학습을 통해 기존보다 빌드 시간은 
+최대 약 1.4배 향상되고 탐색 시간과 오차율은 기존과 거의 동일한 수치를 보였다. (The learned index is an index structure that utilizes machine learning models to learn the positions of keys, allowing for quick retrieval of requested key positions. The learned index has gained attention due to its lower memory usage and superior search performance compared to traditional indexes. However, the learned index has a significant drawback: it requires training the internal machine learning model during the index building process, which results in much longer build times compared to traditional indexes. In this paper, we propose a technique to accelerate the training time by applying SIMD to the internal machine learning algorithms, thereby overcoming the build time limitations of the learned index. As a result, the representative learned index structure, RMI, achieved up to approximately 1.4 times faster build times through parallel training using SIMD, while maintaining almost the same search times and error rates as the original.)}
 }
 
 @article{Yeojin2024,
@@ -152,7 +173,14 @@ Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 �
   author={Yeojin Oh and Minguk Choi and Boseung Kim and YONGJIE ZHU and Seehwan Yoo, and Jongmoo Choi},
   journal={Korea Computer Congress (Accepted)},
   year={2024},
-  venue = {domestic conference}
+  venue = {domestic conference},
+  abstract = {데이터의 양 증가에 따라 발생한 전통적인 인덱스의 크기 문제를 해결하기 위해 Learned Index 기법이 제
+안회었다. 대표적인 읽기 전용 Learned Index인 RMI(Recursive Model Indexes)는 여러 계층에서 데이터 구
+간을 세분화한 구조를 가진다. RMI에서 키 탐색은 여러 계층의 모델을 거쳐 위치를 결정하고 미리 측정한 오
+차범위를 탐색하여 최종 위치에 접근하는 과정을 가진다. RMI의 오차범위 탐색은 모델 예측과 비슷한 오버헤
+드를 가진다는 단점이 있다. 본 논문에서는 RMI의 오차범위 탐색 성능을 개선하기 위해 Branchless Binary 
+Search와 SIMD(Single Instruction Multiple Data) Linear Search 기법을 적용하여 탐색 지연 시간을 최대 
+1.73, 2.97배 감소시켰다. (To address the size issues of traditional indexes caused by the increase in data volume, the Learned Index technique was proposed. A representative read-only Learned Index, RMI (Recursive Model Indexes), has a structure that segments data ranges across multiple layers. In RMI, key retrieval involves determining the position through several layers of models and accessing the final position by searching within a pre-measured error range. However, the error range search in RMI has a drawback of having an overhead similar to model prediction. In this paper, we apply Branchless Binary Search and SIMD (Single Instruction Multiple Data) Linear Search techniques to improve the error range search performance of RMI, reducing the search latency by up to 1.73 and 2.97 times, respectively)}
 }
 
 @article{YONGJIE2024,
@@ -161,5 +189,11 @@ Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 �
   author={Yongjie Zhu and Minguk Choi and Yeojin Oh and Boseung Kim and Seehwan Yoo, and Jongmoo Choi},
   journal={Korea Computer Congress (Accepted)},
   year={2024},
-  venue = {domestic conference}
+  venue = {domestic conference},
+  abstract ={데이터의 급속한 증가에 따라, 기존의 인덱스 방식이 한계에 직면하게 되어 새로운 유형의 인덱스인 
+Learned Index가 개발되었다. Recursive Model Index (RMI)는 데이터의 저장된 위치를 예측하는 경전적인 
+Learned Index 구조로, 기존 인덱스보다 빠른 응답 속도와 작은 공간의 사용을 가진다. SIMD(Single 
+Instruction Multiple Data)는 단일 명령어에 여러 데이터를 병렬 계산하는 방식이다. 본 논문은 RMI의 예
+측 과정에 SIMD를 적용하여 예측 속도를 향상시키고, 성능 분석을 통해 그 영향을 평가한다. SIMD로 가
+속화된 RMI의 예측 성능은45%~75% 향상되었고, 탐색 성능은 10%~70% 향상되었다. (With the rapid increase in data, traditional indexing methods have faced limitations, leading to the development of a new type of index, the Learned Index. Recursive Model Index (RMI) is a classical Learned Index structure that predicts the stored position of data, offering faster response times and smaller space usage compared to traditional indexes. SIMD (Single Instruction Multiple Data) is a technique that performs parallel computation on multiple data points with a single instruction. This paper applies SIMD to the prediction process of RMI to enhance prediction speed and evaluates the impact through performance analysis. The prediction performance of SIMD-accelerated RMI improved by 45% to 75%, and the search performance improved by 10% to 70%.)}
 }

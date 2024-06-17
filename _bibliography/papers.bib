@@ -116,6 +116,25 @@ Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 �
 적용되었을 때 WAL의 쓰기 및 복구 과정과 실험을 통해 성능에 미치는 영향에 대해 분석한다. (Key-value databases provide data consistency using the Write-Ahead-Log (WAL) method. However, data corruption can occur during the process of writing to the WAL or recovering from it, and RocksDB uses checksums to verify this. This paper analyzes the impact on performance of applying per key-value checksums in the writing and recovery processes of the WAL, as tested through experiments.)}
 }
 
+@article{Yeojin2024,
+  abbr={KCC},
+  title={Analysis of RMI Using CPU-Optimized Search Algorithms},
+  author={Yeojin Oh and Minguk Choi and Boseung Kim and YONGJIE ZHU and Seehwan Yoo, and Jongmoo Choi},
+  journal={Korea Computer Congress (Accepted)},
+  year={2024},
+  venue = {domestic conference},
+  award={Best Paper Award},
+  award_name={Best Paper Award},
+  selected={true},
+  abstract = {데이터의 양 증가에 따라 발생한 전통적인 인덱스의 크기 문제를 해결하기 위해 Learned Index 기법이 제
+안회었다. 대표적인 읽기 전용 Learned Index인 RMI(Recursive Model Indexes)는 여러 계층에서 데이터 구
+간을 세분화한 구조를 가진다. RMI에서 키 탐색은 여러 계층의 모델을 거쳐 위치를 결정하고 미리 측정한 오
+차범위를 탐색하여 최종 위치에 접근하는 과정을 가진다. RMI의 오차범위 탐색은 모델 예측과 비슷한 오버헤
+드를 가진다는 단점이 있다. 본 논문에서는 RMI의 오차범위 탐색 성능을 개선하기 위해 Branchless Binary 
+Search와 SIMD(Single Instruction Multiple Data) Linear Search 기법을 적용하여 탐색 지연 시간을 최대 
+1.73, 2.97배 감소시켰다. (To address the size issues of traditional indexes caused by the increase in data volume, the Learned Index technique was proposed. A representative read-only Learned Index, RMI (Recursive Model Indexes), has a structure that segments data ranges across multiple layers. In RMI, key retrieval involves determining the position through several layers of models and accessing the final position by searching within a pre-measured error range. However, the error range search in RMI has a drawback of having an overhead similar to model prediction. In this paper, we apply Branchless Binary Search and SIMD (Single Instruction Multiple Data) Linear Search techniques to improve the error range search performance of RMI, reducing the search latency by up to 1.73 and 2.97 times, respectively)}
+}
+
 @article{Suhwan2024,
   abbr={KCC},
   title={Breakdown Internal Operations in Updatable Learned Index},
@@ -168,21 +187,7 @@ Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 �
 최대 약 1.4배 향상되고 탐색 시간과 오차율은 기존과 거의 동일한 수치를 보였다. (The learned index is an index structure that utilizes machine learning models to learn the positions of keys, allowing for quick retrieval of requested key positions. The learned index has gained attention due to its lower memory usage and superior search performance compared to traditional indexes. However, the learned index has a significant drawback: it requires training the internal machine learning model during the index building process, which results in much longer build times compared to traditional indexes. In this paper, we propose a technique to accelerate the training time by applying SIMD to the internal machine learning algorithms, thereby overcoming the build time limitations of the learned index. As a result, the representative learned index structure, RMI, achieved up to approximately 1.4 times faster build times through parallel training using SIMD, while maintaining almost the same search times and error rates as the original.)}
 }
 
-@article{Yeojin2024,
-  abbr={KCC},
-  title={Analysis of RMI Using CPU-Optimized Search Algorithms},
-  author={Yeojin Oh and Minguk Choi and Boseung Kim and YONGJIE ZHU and Seehwan Yoo, and Jongmoo Choi},
-  journal={Korea Computer Congress (Accepted)},
-  year={2024},
-  venue = {domestic conference},
-  abstract = {데이터의 양 증가에 따라 발생한 전통적인 인덱스의 크기 문제를 해결하기 위해 Learned Index 기법이 제
-안회었다. 대표적인 읽기 전용 Learned Index인 RMI(Recursive Model Indexes)는 여러 계층에서 데이터 구
-간을 세분화한 구조를 가진다. RMI에서 키 탐색은 여러 계층의 모델을 거쳐 위치를 결정하고 미리 측정한 오
-차범위를 탐색하여 최종 위치에 접근하는 과정을 가진다. RMI의 오차범위 탐색은 모델 예측과 비슷한 오버헤
-드를 가진다는 단점이 있다. 본 논문에서는 RMI의 오차범위 탐색 성능을 개선하기 위해 Branchless Binary 
-Search와 SIMD(Single Instruction Multiple Data) Linear Search 기법을 적용하여 탐색 지연 시간을 최대 
-1.73, 2.97배 감소시켰다. (To address the size issues of traditional indexes caused by the increase in data volume, the Learned Index technique was proposed. A representative read-only Learned Index, RMI (Recursive Model Indexes), has a structure that segments data ranges across multiple layers. In RMI, key retrieval involves determining the position through several layers of models and accessing the final position by searching within a pre-measured error range. However, the error range search in RMI has a drawback of having an overhead similar to model prediction. In this paper, we apply Branchless Binary Search and SIMD (Single Instruction Multiple Data) Linear Search techniques to improve the error range search performance of RMI, reducing the search latency by up to 1.73 and 2.97 times, respectively)}
-}
+
 
 @article{YONGJIE2024,
   abbr={KCC},

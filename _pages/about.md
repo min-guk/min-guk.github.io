@@ -27,4 +27,4 @@ On-going projects:
   - **Adaptive Sample Training Algorithm for Learned Index**: An algorithm for dynamically training with the optimal sampling interval by considering the data distribution and error-bound.
   - **Accelerating Learned Index via SIMD**: Accelerating the unique training and operations (e.g., model-biased insert) of learned index through the parallelism of internal ML models, which has not yet been actively studied.
 
-##### **<span style="color: #D80000;">I am currently looking for a PhD position & research internship for 2025!</span>**   
+##### **<span style="color: #D80000;">I am currently looking for a PhD position 2025!</span>**   

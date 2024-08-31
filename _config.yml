@@ -102,7 +102,9 @@ wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: # work page URL
 x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+cv_file: pdf/Minguk_Choi.pdf # your zotero username
 zotero_username: # your zotero username
+
 
 contact_note: >
   "We can only see a short distance ahead, but we can see plenty there that needs to be done" — Alan Turing

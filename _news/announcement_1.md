@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper **'Can Learned Indexes be Built Efficiently? A Deep Dive into Sampling Trade-offs'** has been accepted with minor-revision for SIGMOD '24 (Round 4). 
+Our paper **'Can Learned Indexes be Built Efficiently? A Deep Dive into Sampling Trade-offs'** has been accepted with minor-revision for SIGMOD '24 (Round 4)!

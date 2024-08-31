@@ -216,6 +216,10 @@
     {% capture link %}https://www.zotero.org/{{ site.zotero_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
+  {% if site.cv_file %}
+    {% capture link %}{{ site.baseurl }}/assets/{{ site.cv_file }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
   {% if sameaslinks != blank %}
     {% assign sameaslinks = sameaslinks | split: '' %}
   {% endif %}

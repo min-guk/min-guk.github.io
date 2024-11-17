@@ -1,0 +1,23 @@
+- title: "Master's Graduation, Dankook University"
+  description: "My Family, Lab Members, and Advisors (Prof. Jongmoo Choi and Prof. Seehwan Yoo)"
+  photos:
+    - "/assets/img/MS1.jpg"
+    - "/assets/img/MS2.png"
+    - "/assets/img/MS3.png"
+    - "/assets/img/MS4.jpg"
+
+- title: "Korea Computer Congress 2024 (Jeju, Korea)"
+  description: "The Presentation, Joy After the Presentation, and Lab Members"
+  photos:
+    - "/assets/img/kcc24_1.jpg"
+    - "/assets/img/kcc24_2.jpg"
+    - "/assets/img/kcc24_3.jpg"
+    - "/assets/img/kcc24_4.jpg"
+
+- title: "ACM SIGMOD 2024 (Santiago, Chile)"
+  description: "Poster Presentation, Oral Presentation, and Post-Conference Travel"
+  photos:
+    - "/assets/img/SIGMOD1.png"
+    - "/assets/img/SIGMOD2.jpg"
+    - "/assets/img/SIGMOD3.jpg"
+    - "/assets/img/SIGMOD4.jpg"

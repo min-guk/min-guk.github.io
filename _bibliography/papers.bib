@@ -85,6 +85,21 @@ LevelDB의 ReadRandom 연산 성능을 측정함으로써 데이터베이스의 
 }
 }
 
+@article{Suhwan2022rocksdb,
+  abbr={KSC},
+  title={Per Key-Value Checksum Analysis on RocksDB},
+  author={Suhwan Shin and Seyeon Park and Minguk Choi and Seehwan Yoo, and Jongmoo Choi},
+  journal={Korea Software Congress},
+  pages={1848--1850},
+  year={2022},
+  venue = {domestic conference},
+  pdf={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224618},
+  abstract={키-밸류 데이터베이스는 WAL(Write-Ahead-Log) 방식으로 데이터의 일관성을 제공한다. 그러나 데이터
+를 WAL에 쓰는 과정 또는 WAL에서 복구하는 과정에서 데이터의 손상이 발생할 수 있고 RocksDB에서
+는 이를 체크섬으로 확인한다. 본 논문에서는 메모리 내 체크섬을 제공하는 per key-value checksum이
+적용되었을 때 WAL의 쓰기 및 복구 과정과 실험을 통해 성능에 미치는 영향에 대해 분석한다. (Key-value databases provide data consistency using the Write-Ahead-Log (WAL) method. However, data corruption can occur during the process of writing to the WAL or recovering from it, and RocksDB uses checksums to verify this. This paper analyzes the impact on performance of applying per key-value checksums in the writing and recovery processes of the WAL, as tested through experiments.)}
+}
+
 @article{Sangwoo2022compaction,
   abbr={KSC},
   title={Read performance analysis according to Compaction Trigger},
@@ -100,20 +115,6 @@ LevelDB의 ReadRandom 연산 성능을 측정함으로써 데이터베이스의 
 성능에 큰 영향을 준다. 따라서 본 Compaction을 실행하는 방법에 따라 성능에 영향을 줄 것이라 판단하여
 Compaction 작업을 실행하는 2가지 구조에 대해 알아보고 실행 여부에 따라 Read 성능 변화를 관찰했다. (As the variety and volume of data continue to grow today, Google has developed the LSM-Tree based NoSQL database, LevelDB. LevelDB performs compaction processes to effectively manage data files, removing duplicate data and creating newly organized data files, which significantly impacts performance. Therefore, considering that the method of executing this compaction could affect performance, this study explores two different structures for performing compaction and observes changes in read performance based on whether or not compaction is executed.)
 }
-}
-
-@article{Suhwan2022rocksdb,
-  abbr={KSC},
-  title={Per Key-Value Checksum Analysis on RocksDB},
-  author={Suhwan Shin and Seyeon Park and Minguk Choi and Seehwan Yoo, and Jongmoo Choi},
-  journal={Korea Software Congress},
-  pages={1848--1850},
-  year={2022},
-  pdf={https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224618},
-  abstract={키-밸류 데이터베이스는 WAL(Write-Ahead-Log) 방식으로 데이터의 일관성을 제공한다. 그러나 데이터
-를 WAL에 쓰는 과정 또는 WAL에서 복구하는 과정에서 데이터의 손상이 발생할 수 있고 RocksDB에서
-는 이를 체크섬으로 확인한다. 본 논문에서는 메모리 내 체크섬을 제공하는 per key-value checksum이
-적용되었을 때 WAL의 쓰기 및 복구 과정과 실험을 통해 성능에 미치는 영향에 대해 분석한다. (Key-value databases provide data consistency using the Write-Ahead-Log (WAL) method. However, data corruption can occur during the process of writing to the WAL or recovering from it, and RocksDB uses checksums to verify this. This paper analyzes the impact on performance of applying per key-value checksums in the writing and recovery processes of the WAL, as tested through experiments.)}
 }
 
 @article{Yeojin2024,

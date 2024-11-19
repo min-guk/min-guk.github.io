@@ -7,7 +7,7 @@
     - "/assets/img/MS4.jpg"
 
 - title: "Korea Computer Congress, Jeju, Korea, 2024"
-  description: "Presentations by Me and My Mentees, Joy After the Presentation, and Lab Members"
+  description: "Presentations by Me and My Mentees, and Lab Members"
   photos:
     - "/assets/img/kcc24_1.jpg"
     - "/assets/img/kcc24_2.jpg"
@@ -27,14 +27,13 @@
     - "/assets/img/SIGMOD4.jpg"
 
 - title: "Korea Software Congress, Jeju, Korea, 2022"
-  description: "Poster Presentation by Key-value Store Study Mentees and Midnight Tangerine Picking"
+  description: "Poster Presentation by Key-value Store Study Mentees, and Lab Members"
   photos:
-    - "/assets/img/ksc1.jpg"
     - "/assets/img/ksc22_2.jpg"
     - "/assets/img/ksc22_3.jpg"
     - "/assets/img/ksc22_4.jpg"
     - "/assets/img/ksc22_5.jpg"
-    - "/assets/img/ksc6.jpg"
+    - "/assets/img/ksc1.jpg"
 
 - title: "Key-value Store Study, Dankook University, 2022"
   description: "Kick-off Meeting"

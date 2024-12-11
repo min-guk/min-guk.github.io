@@ -22,8 +22,8 @@ I am researching in Korea under the remote supervision of [Professor Matthias Bo
 
 Previously, I earned my Master's degree in August 2024 from Dankook University in Korea, where I had the privilege of being advised by Professors [Seehwan Yoo](https://sites.google.com/site/dkumobileos/members/seehwanyoo) and [Jongmoo Choi](http://embedded.dankook.ac.kr/~choijm/) in the [System Software Laboratory](https://sslab.dankook.ac.kr/).
 
-My research focuses on **Systems for ML** and **ML for Systems**, with a particular emphasis on *Resource-efficient Training/Serving on Cloud/Edge* and *Learned Index Structure*. Here is my [CV](./assets/pdf/Minguk_Choi.pdf).
+My research focuses on **Systems for ML** and **ML for Systems**, with a particular emphasis on *Resource-efficient Training/Serving on Cloud/Edge* and *Learned Index Structure*. Here is my [CV](./assets/pdf/CV_MingukChoi.pdf).
 
 On-going projects:
-  - **Federated Learning Plan under Privacy Constraints**: Compile the optimal federated runtime plan for end-to-end ML pipelines (e.g., data preparation, debugging, and training) using a cost model based on the different privacy constraints of data, workers, and tasks in [Apache SystemDS](https://github.com/apache/systemds).
+  - **Federated Learning Plan under Privacy Constraints**: Compile the optimal federated runtime plan for end-to-end ML pipelines (e.g., data preparation, debugging, and training) using a cost model based on the different privacy constraint in [Apache SystemDS](https://github.com/apache/systemds).
   - **Exploring the Design Space for SIMD Acceleration in Learned Indexes**: Introduce novel approaches that accelerate learned indexes by leveraging SIMD and data parallelism in internal operations (e.g., error-bound estimation, model-biased insert). Additionally, it extends the SIMD design space of index structures from horizontal to vertical vectorization.
